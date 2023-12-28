@@ -1,0 +1,198 @@
+/* this is universal css file which will be linked to all pages of this website, 
+   it is more like a template, which contains the same properties for header, footer.. and etc,
+   the css styling for each pages will be in their html file(internal css will be applied to all pages) */
+
+   @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+   /* font-family: 'Montserrat', sans-serif; */
+
+nav{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+nav li:hover{
+    background-color: #c3c3f1;
+    /* border-bottom: 2px solid rgb(163, 163, 163); */
+}
+.active {
+    border-bottom: 2px solid rgb(163, 163, 163);
+    /* background-color: #b1b1e0; */
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #F8F9FA; 
+}
+
+.topGap{
+    width: 100%;
+    height: 66.5px;
+}
+.redBox{
+    position: relative;
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    background-color:#E31937;
+    color: aliceblue;
+    font-weight: 600;
+    padding-top: 5px;
+}
+.redBox p{
+    font-size: 13px;
+}
+.profileIcon:hover{
+     background-color: rgb(217, 217, 230);
+     border-radius: 50%;
+}
+
+
+/* insta gallery properties */
+.instaSection{
+    margin-top: 20px;
+    margin-left: -10px;
+}
+.instaGallery{
+    display: flex;
+    justify-content: center;
+}
+.instaImages{
+    margin: 10px;
+    height: 200px;
+    width: 200px;
+}
+.instaHeading {
+    text-align: center;
+    color: rgb(122, 122, 122);
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.i1{
+    background-image: url(./assets/instaSectionPics/398812127_866041165057920_3464573180192498910_n.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.i1:hover{
+    background-image: url(./assets/instaSectionPics/Untitled-1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.i2{
+    background-image: url(./assets/instaSectionPics/404316816_3741780862775446_7985212229912344778_n.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.i2:hover{
+    background-image: url(./assets/instaSectionPics/Untitled-1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.i3{
+    background-image: url(./assets/instaSectionPics/404030303_387299480288748_6139940646532144270_n.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.i3:hover{
+    background-image: url(./assets/instaSectionPics/Untitled-1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.i4{
+    background-image: url(./assets/instaSectionPics/402059424_401405865544736_295723826180443987_n.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.i4:hover{
+    background-image: url(./assets/instaSectionPics/Untitled-1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.i5{
+    background-image: url(./assets/instaSectionPics/405254303_3200528816916246_9006165940330824092_n.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.i5:hover{
+    background-image: url(./assets/instaSectionPics/Untitled-1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.i6{
+    background-image: url(./assets/instaSectionPics/407815066_696288349263883_1413230956310596619_n.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.i6:hover{
+    background-image: url(./assets/instaSectionPics/Untitled-1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/* fb section */ 
+.facebookSection{
+    margin-top: 40px;
+    width: 100%;
+    /* background-color: white; */
+    background-image: linear-gradient( #6e8ad685, #6e8ad685 ), url(./assets/forHomePage/coverHero/coverforheroes.jpg);
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    margin-bottom: -3px;
+}
+.facebookSection h6{
+    padding-top: 7px;
+    font-size: 14px;
+    font-weight: 700;
+}
+.facebookSection .fbButton{
+    background-color: black;
+    color: antiquewhite;
+    font-size: 13px;
+    letter-spacing: 1.5px;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+}
+.facebookSection .fbButton:hover{
+    background-color: rgb(46, 46, 46);
+    color: antiquewhite;
+    padding: 10px;
+}
+.facebookSection a{
+    text-decoration: none;
+}
+
+/* footer properties */
+footer{
+    /* background-color:white ; */
+    background-image:linear-gradient( #6e8ad685, #6e8ad685 ), url(./assets/forHomePage/coverHero/coverforheroes.jpg);
+    background-attachment: fixed;
+}
+footer p{
+    font-size: 14px;
+}
+footer h6{
+    letter-spacing: 0.6px;
+    font-size: 15px;
+    font-weight: 600;
+    color: rgb(70, 70, 70);
+}
+footer li{
+    font-size: 14px;
+}
+.footerLiner{
+    display: flex;
+    justify-content: center;
+    /* background-color: white; */
+    background-image: linear-gradient( #6e8ad685, #6e8ad685 ), url(./assets/forHomePage/coverHero/coverforheroes.jpg);
+    background-attachment: fixed;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: -2px;
+}

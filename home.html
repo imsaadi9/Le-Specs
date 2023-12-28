@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="./assets/logo 1-01.png"/>
+    <title>Le Specs - Discover the Season's Best &nbsp; Sunglasses</title>
+    <!-- fonts -->
+    <!-- font-family: 'Inter', sans-serif;    
+        weights are 200,300,400,500,600   -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="./frameworkLinks/bootstrap-5.3.2-dist/bootstrap-5.3.2-dist/css/bootstrap.min.css">
+    <!-- external css(universal) -->
+    <link rel="stylesheet" href="./universal.css">
+
+    <!-- internal Css -->
+    <style>
+       .cover{
+        height: 90vh;
+        width: 100%;
+        background-image: url(./assets/forHomePage/coverHero/cover.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        display: flex;
+        align-items: center; 
+      }
+      .twoHeroes{
+        background-color: white;
+        font-family: 'Poppins', sans-serif;
+      }
+      .fourPageCover{
+        width: 320px;
+        height: 500px;
+        display: flex;
+        align-items: flex-end;
+        padding-bottom: 30px;
+        padding-left: 30px;
+       
+      }
+      .fourPageCover p{
+        font-size: 24px;
+        color: white;
+        margin-bottom: 5px;
+      }
+      .fourPageCover p.b{
+        font-weight: 600;
+      }
+      .fourPageCover button{
+        color: rgb(65, 65, 65);
+      }
+      .fourPageCover1{
+        background-image: url(./assets/forHomePage/4pagesCover/mensSunglasses.jpg);
+        background-repeat: no-repeat;
+        background-size: 490px;
+        background-position-y: -90px;
+        margin-right: 15px;
+      }
+      .fourPageCover2{
+        background-image: url(./assets/forHomePage/4pagesCover/womensSunglasses.jpg);
+        background-repeat: no-repeat;
+        background-size: 440px;
+        background-position-y: -30px;
+        margin-right: 15px;
+      }
+      .fourPageCover3{
+        background-image: url(./assets/forHomePage/4pagesCover/newReleasesSunglasses.jpg);
+        background-repeat: no-repeat;
+        background-size: 440px;
+        background-position-x: -50px;
+        margin-right: 15px;
+      }
+      .fourPageCover4{
+        background-image: url(./assets/forHomePage/4pagesCover/sustainableSunglasses.jpg);
+        background-repeat: no-repeat;
+        background-size: 400px;
+        background-position-x: -25px;
+      }
+      .trendingItems h1{
+        font-weight: 700;
+        text-align: center;
+      }
+      .trendingItems .itemImageBox{
+        height: 200px;
+        width: 200px;
+        cursor: pointer;
+      }
+      .itemName{
+        text-align: center;
+        font-size: 13px;
+        font-weight: 500;
+      }
+      .trendingItems button{
+        font-size: 12px;
+        word-spacing: 3px;
+        letter-spacing: 1px;
+      }
+      .trendingItems a{
+        text-decoration: none;
+      }
+      .bestSeller{
+        padding-bottom: 20px;
+        /* border-bottom: 1px solid rgb(177, 177, 177); */
+        box-shadow: 0 9px 10px rgba(0, 0, 0, 0.4);
+      }
+      .popular{
+        width: 80%;
+        margin-left: auto;
+      }
+      .popular p{
+        text-align: center;
+        color: gray;
+      }
+      span{
+        color: rgb(0, 146, 0);
+      }
+      .twoHeroes{
+        background-image: url(./assets/forHomePage/coverHero/coverforheroes.jpg);
+        background-attachment: fixed;
+      }
+    
+      
+
+
+
+     /* phone responsiveness */
+      @media screen and (max-width: 600px) {
+      .cover {
+      background-image: url(./assets/forHomePage/coverHero/coverResponsive.jpg);
+      width: 460px;
+      height: 599px;
+      background-attachment: scroll;
+      }
+      }
+
+
+    </style>
+    
+    <!-- bootstrap js -->
+    <script src="./frameworkLinks/bootstrap-5.3.2-dist/bootstrap-5.3.2-dist/js/bootstrap.min.js"></script>
+    <!-- jquery link -->
+    <script src="./frameworkLinks/jquery-3.7.1.min.js"></script>
+    <!-- external js -->
+    <script src="./index.js"></script>
+</head>
+
+<body>
+
+  <div class="container-fluid">
+
+    <!-- Header -->
+    <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light">
+        <div class="container-fluid">
+          <a href="./home.html"><img src="./assets/logo 2.png" alt="Logo" height="50px"></a>
+          <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="navbar-collapse collapse fs-6" id="navbarCollapse" >
+            <ul class="navbar-nav me-auto mb-2 mb-md-0 ms-auto ">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./home.html">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/men/pg1.html">MEN</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/women/pg1.html">WOMEN</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/newReleases/pg1.html">NEW RELEASES</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/sustainable/pg1.html">SUSTAINABLE</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-danger" href="./pages/sale/pg1.html">SALE</a>
+              </li>
+            </ul>
+          </div>
+          <a href="#profilepage" ><img src="./assets/profile.svg" class="profileIcon" height="40px">
+          </a>
+        </div>
+    </nav>
+    <div class="topGap"></div>
+    <div class="redBox"><p>Discover the Season's Best Sunglasses with a Good Discounts</p></div>
+
+    <!-- body -->
+    <!-- cover -->
+    <div class="cover container-fluid">
+       <div class="row mx-auto">
+          <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 d-grid gap-2 d-sm-flex justify-content-sm-center">
+          <a href="./pages/sale/pg1.html"><button type="button" class="btn btn-light btn-lg px-4 gap-3 rounded-3 fw-bold">SHOP NOW</button></a>
+          </div>
+        </div>
+    </div>
+
+    <!-- two heroes -->
+    
+      <div class="container-fluid twoHeroes">
+        <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 ">
+          <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+            <h1 class="display-4 fw-bold lh-1 text-body-emphasis">Le Specs: Elevate Your Style with Eyewear Trends</h1>
+            <p class="lead">Le Specs presents a stunning collection of men's sunglasses, seamlessly blending cutting-edge design with premium quality. Elevate your style with iconic frames and superior UV protection for a fashion-forward statement.</p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
+              <a href="./pages/men/pg1.html"><button type="button" class="btn btn-primary btn-dark btn-lg px-4 me-md-2 fw-bold">Visit Now</button></a>
+              <a href="https://intl.lespecs.com/pages/privacy-policy"><button type="button" class="btn btn-outline-secondary btn-lg px-4">Privacy Policy</button></a>
+            </div>
+          </div>
+          <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden ">
+              <img class="rounded-lg-3" src="./assets/forHomePage/twoSidebysideHero/men.jpg"  width="435px">
+          </div>
+        </div>
+      </div>
+  
+      <div class="container-fluid pt-3 mt-3  twoHeroes">
+        <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 shadow-sm">
+          <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+            <h1 class="display-4 fw-bold lh-1 text-body-emphasis">Le Specs: Effortless Graceful, Sun-Ready Fashion</h1>
+            <p class="lead">Discover the epitome of sophistication with Le Specs women's sunglasses. Unveil a world of elegance through meticulously crafted frames, offering both timeless style and unparalleled UV protection for the modern woman.</p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
+              <a href="./pages/women/pg1.html"><button type="button" class="btn btn-primary btn-dark  btn-lg px-4 me-md-2 fw-bold">Visit Now</button></a>
+              <a href="https://intl.lespecs.com/pages/privacy-policy"><button type="button" class="btn btn-outline-secondary btn-lg px-4">Privacy Policy</button></a>
+            </div>
+          </div>
+          <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden ">
+              <img class="rounded-lg-3" src="./assets/forHomePage/twoSidebysideHero/women.jpg"  width="435px">
+          </div>
+        </div>
+      </div>
+    
+
+    <!-- trending Now items -->
+
+    <div class="container-fluid trendingItems mt-5 mb-5">
+      <h1 class="mb-4">Popular Trends</h1>
+
+      <div class="row">
+
+        <div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-2 d-flex flex-column align-items-center ">
+          <a href="https://intl.lespecs.com/products/bandwagon-matte-tort-smoke-mono-polarised-lsp1502122?variant=37533337747652"><div class="itemImageBox">
+            <img src="./assets/forHomePage/itemGallerypics/LSP1502122_2BANDWAGON_1512x.jpg" height="200px" >
+          </div></a>
+          <div class="itemName mt-2 mb-2">BANDWAGON | MATTE TORT </div>
+          <div class="itemName"><s>$70.00</s><span> $45.00</span></div>
+          <a href="https://intl.lespecs.com/products/bandwagon-matte-tort-smoke-mono-polarised-lsp1502122?variant=37533337747652"><div class="d-flex justify-content-center"><button type="button" class="btn btn-dark btn-lg px-4 py-2 mt-2 rounded-0 fw-medium">EXPLORE IT</button></div></a>
+        </div>
+
+        <div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-2 d-flex flex-column align-items-center ">
+          <a href="https://intl.lespecs.com/products/air-heart-black-gold-khaki-mono-lsp1602175?variant=37533339484356"><div class="itemImageBox">
+            <img src="./assets/forHomePage/itemGallerypics/LSP1602175_2-AIR-HEART_e92e2c41-6855-4b38-94f7-71e5d1797878_1512x.jpg" height="200px" >
+          </div></a>
+          <div class="itemName mt-2 mb-2">AIR HEART | BLACK</div>
+          <div class="itemName">$70.00</div>
+          <a href="https://intl.lespecs.com/products/air-heart-black-gold-khaki-mono-lsp1602175?variant=37533339484356"><div class="d-flex justify-content-center"><button type="button" class="btn btn-dark btn-lg px-4 py-2 mt-2 rounded-0 fw-medium">EXPLORE IT</button></div></a>
+        </div>
+
+        <div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-2 d-flex flex-column align-items-center ">
+          <a href="https://intl.lespecs.com/products/outta-love-black-smoke-mono-lsp1802189?variant=37533340532932"><div class="itemImageBox">
+            <img src="./assets/forHomePage/itemGallerypics/LSP1802189_OUTTA_LOVE_50a51cab-5dd6-4451-9b3c-18328256920c_1512x.jpg" height="200px" >
+          </div></a>
+          <div class="itemName mt-2 mb-2">OUTTA LOVE | BLACK</div>
+          <div class="itemName"><s>$90.00</s><span> $50.00</span></div>
+          <a href="https://intl.lespecs.com/products/outta-love-black-smoke-mono-lsp1802189?variant=37533340532932"><div class="d-flex justify-content-center"><button type="button" class="btn btn-dark btn-lg px-4 py-2 mt-2 rounded-0 fw-medium">EXPLORE IT</button></div></a>
+        </div>
+
+        <div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-2 d-flex flex-column align-items-center ">
+          <a href="https://intl.lespecs.com/products/no-biggie-pewter-smoke-mono-lsp1802447?variant=37533363667140"><div class="itemImageBox">
+            <img src="./assets/forHomePage/itemGallerypics/LSP1802447_2_NO_BIGGIE_d43a68f0-c487-46ee-943e-3101f6c75387_1512x.jpg" height="200px" >
+          </div></a>
+          <div class="itemName mt-2 mb-2">NO BIGGIE | PEWTER-SMOKE</div>
+          <div class="itemName">$60.00</div>
+          <a href="https://intl.lespecs.com/products/no-biggie-pewter-smoke-mono-lsp1802447?variant=37533363667140"><div class="d-flex justify-content-center"><button type="button" class="btn btn-dark btn-lg px-4 py-2 mt-2 rounded-0 fw-medium">EXPLORE IT</button></div></a>
+        </div>
+
+        <div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-2 d-flex flex-column align-items-center ">
+          <a href="https://intl.lespecs.com/products/outta-love-tort-green-mono-lsp1802498?variant=37533340500164"><div class="itemImageBox">
+            <img src="./assets/forHomePage/itemGallerypics/LSP1802498_2_OUTTA_LOVE_c8d72872-81f0-4ffe-a2e7-936b3fb3016b_1512x.jpg" height="200px" >
+          </div></a>
+          <div class="itemName mt-2 mb-2">OUTTA LOVE | TORT</div>
+          <div class="itemName">$60.00</div>
+          <a href="https://intl.lespecs.com/products/outta-love-tort-green-mono-lsp1802498?variant=37533340500164"><div class="d-flex justify-content-center"><button type="button" class="btn btn-dark btn-lg px-4 py-2 mt-2 rounded-0 fw-medium">EXPLORE IT</button></div></a>
+        </div>
+
+        <div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-2 d-flex flex-column align-items-center ">
+          <a href="https://intl.lespecs.com/products/velodrome-white-lsp2352217?variant=42407788314820"><div class="itemImageBox">
+            <img src="./assets/forHomePage/itemGallerypics/LSP2352217_2VELODROME_1512x.jpg" height="200px" >
+          </div></a>
+          <div class="itemName mt-2 mb-2">VELODROME | WHITE</div>
+          <div class="itemName"><s>$60.00</s><span> $30.00</span></div>
+          <a href="https://intl.lespecs.com/products/velodrome-white-lsp2352217?variant=42407788314820"><div class="d-flex justify-content-center"><button type="button" class="btn btn-dark btn-lg px-4 py-2 mt-2 rounded-0 fw-medium">EXPLORE IT</button></div></a>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- four page cover -->
+
+    <div class="container-fluid mt-3 ">
+
+      <div class="row d-flex justify-content-center">
+
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3  fourPageCover border fourPageCover1">
+          <div>
+            <p class="b">Men's</p>
+            <p>Sunglasses</p>
+            <a href="./pages/men/pg1.html"><button class="btn btn-light rounded-0 fw-bold">SHOP ALL</button></a>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3  fourPageCover border fourPageCover2">
+          <div>
+            <p class="b">Women's</p>
+            <p>Sunglasses</p>
+            <a href="./pages/women/pg1.html"><button class="btn btn-light rounded-0 fw-bold">SHOP ALL</button></a>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3  fourPageCover border fourPageCover3">
+          <div>
+            <p class="b">New Releases</p>
+            <p>Sunglasses</p>
+            <a href="./pages/newReleases/pg1.html"><button class="btn btn-light rounded-0 fw-bold">SHOP ALL</button></a>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3  fourPageCover border fourPageCover4">
+          <div>
+            <p class="b">Sustainable</p>
+            <p>Sunglasses</p>
+            <a href="./pages/sustainable/pg1.html"><button class="btn btn-light rounded-0 fw-bold">SHOP ALL</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container popular mt-5 ">
+      <p>Discover our Women's Sunglasses collection from Le Specs. Featuring cat eye styles, round frames, square frames, classic aviator styles, and oversized options with sleek, modern attitude. Shop a range of neutral tones and bold colours at affordable prices. From runway inspired sunglasses to poolside frames, wear these shades during the festival season, to weddings, at celebrations and on walks around the city. As seen on Gigi Hadid, Kendall Jenner, Hailey Bieber, Beyonce, Lady Gaga, Meghan Markle, Kourtney Kardashian.
+      </p>
+    </div>
+
+    <!-- best seller gallery -->
+    <div class="container-fluid trendingItems mt-5 mb-5 bestSeller">
+      <h1 class="mb-4">Best Sellers</h1>
+
+      <div class="row">
+
+        <div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-2 d-flex flex-column align-items-center ">
+          <a href="https://intl.lespecs.com/products/grass-half-full-burgundy-lsu2029502?variant=37533247144132"><div class="itemImageBox">
+            <img src="./assets/forHomePage/itemGallerypics/LSP2352220_2UNDERWRAPS_1512x.jpg" height="200px" >
+          </div></a>
+          <div class="itemName mt-2 mb-2">GRASS HALF FULL | BURGUNDY</div>
+          <div class="itemName"><s>$65.00</s><span> $40.00</span></div>
+          <a href="https://intl.lespecs.com/products/grass-half-full-burgundy-lsu2029502?variant=37533247144132"><div class="d-flex justify-content-center"><button type="button" class="btn btn-dark btn-lg px-4 py-2 mt-2 rounded-0 fw-medium">EXPLORE IT</button></div></a>
+        </div>
+
+        <div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-2 d-flex flex-column align-items-center ">
+          <a href="https://intl.lespecs.com/products/y2ok-black-lsp2352133"><div class="itemImageBox">
+            <img src="./assets/forHomePage/itemGallerypics/LSP2352228_2BIZARRO_4f5e6f1b-5a9d-4a50-90df-3d244a28b174_1512x.jpg" height="200px" >
+          </div></a>
+          <div class="itemName mt-2 mb-2">Y2OK | BLACK</div>
+          <div class="itemName">$80.00</div>
+          <a href="https://intl.lespecs.com/products/y2ok-black-lsp2352133"><div class="d-flex justify-content-center"><button type="button" class="btn btn-dark btn-lg px-4 py-2 mt-2 rounded-0 fw-medium">EXPLORE IT</button></div></a>
+        </div>
+
+        <div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-2 d-flex flex-column align-items-center ">
+          <a href="https://intl.lespecs.com/products/tres-gauche-exclusive-midnight-lsp2202439"><div class="itemImageBox">
+            <img src="./assets/forHomePage/itemGallerypics/LSP2352292_2PILFERERLTDEDT_1512x.jpg" height="200px" >
+          </div></a>
+          <div class="itemName mt-2 mb-2">TRES GAUCHE | MIDNIGHT</div>
+          <div class="itemName"><s>$75.00</s><span> $50.00</span></div>
+          <a href="https://intl.lespecs.com/products/tres-gauche-exclusive-midnight-lsp2202439"><div class="d-flex justify-content-center"><button type="button" class="btn btn-dark btn-lg px-4 py-2 mt-2 rounded-0 fw-medium">EXPLORE IT</button></div></a>
+        </div>
+
+        <div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-2 d-flex flex-column align-items-center ">
+          <a href="https://intl.lespecs.com/products/outta-love-tort-green-mono-lsp1802498?variant=37533340500164"><div class="itemImageBox">
+            <img src="./assets/forHomePage/itemGallerypics/LSP2452396_2OUTTALOVE_413af1dd-bfed-4132-9f57-3ebc60214cef_1512x.jpg" height="200px" >
+          </div></a>
+          <div class="itemName mt-2 mb-2">OUTTA LOVE | TORT</div>
+          <div class="itemName">$60.00</div>
+          <a href="https://intl.lespecs.com/products/outta-love-tort-green-mono-lsp1802498?variant=37533340500164"><div class="d-flex justify-content-center"><button type="button" class="btn btn-dark btn-lg px-4 py-2 mt-2 rounded-0 fw-medium">EXPLORE IT</button></div></a>
+        </div>
+
+        <div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-2 d-flex flex-column align-items-center ">
+          <a href="https://intl.lespecs.com/products/bandwagon-matte-tort-smoke-mono-polarised-lsp1502122?variant=37533337747652"><div class="itemImageBox">
+            <img src="./assets/forHomePage/itemGallerypics/LSP1502122_2BANDWAGON_1512x.jpg" height="200px" >
+          </div></a>
+          <div class="itemName mt-2 mb-2">BANDWAGON | MATTE TORT</div>
+          <div class="itemName"><s>$75.00</s><span> $70.00</span></div>
+          <a href="https://intl.lespecs.com/products/bandwagon-matte-tort-smoke-mono-polarised-lsp1502122?variant=37533337747652"><div class="d-flex justify-content-center"><button type="button" class="btn btn-dark btn-lg px-4 py-2 mt-2 rounded-0 fw-medium">EXPLORE IT</button></div></a>
+        </div>
+
+        <div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-2 d-flex flex-column align-items-center ">
+          <a href="https://intl.lespecs.com/products/air-heart-black-gold-khaki-mono-lsp1602175?variant=37533339484356"><div class="itemImageBox">
+            <img src="./assets/forHomePage/itemGallerypics/LSP1602175_2-AIR-HEART_e92e2c41-6855-4b38-94f7-71e5d1797878_1512x.jpg" height="200px" >
+          </div></a>
+          <div class="itemName mt-2 mb-2">AIR HEART | BLACK</div>
+          <div class="itemName">$70.00</div>
+          <a href="https://intl.lespecs.com/products/air-heart-black-gold-khaki-mono-lsp1602175?variant=37533339484356"><div class="d-flex justify-content-center"><button type="button" class="btn btn-dark btn-lg px-4 py-2 mt-2 rounded-0 fw-medium">EXPLORE IT</button></div></a>
+        </div>
+      </div>
+    </div>
+
+
+    
+
+
+    <!-- insta portion -->
+    <div class="instaSection container-fluid  ">
+        <div class="instaHeading"><p>Visit Our Instagram</p></div>
+        <div class="instaGallery row ">
+            <a href="https://www.instagram.com/lespecs/?hl=en" class="col-6 col-lg-4 col-xl-2"><div class="instaImages i1 "></div></a>
+            <a href="https://www.instagram.com/lespecs/?hl=en" class="col-6 col-lg-4 col-xl-2"><div class="instaImages i2 "></div></a>
+            <a href="https://www.instagram.com/lespecs/?hl=en" class="col-6 col-lg-4 col-xl-2"><div class="instaImages i3 "></div></a>
+            <a href="https://www.instagram.com/lespecs/?hl=en" class="col-6 col-lg-4 col-xl-2"><div class="instaImages i4 "></div></a>
+            <a href="https://www.instagram.com/lespecs/?hl=en" class="col-6 col-lg-4 col-xl-2"><div class="instaImages i5 "></div></a>
+            <a href="https://www.instagram.com/lespecs/?hl=en" class="col-6 col-lg-4 col-xl-2"><div class="instaImages i6 "></div></a>
+        </div>
+    </div>
+
+  
+
+    <!-- follow on facebook section -->
+    <div class="facebookSection">
+        <div class="fbLine"><h6><i>FOLLOW US ON FACEBOOK TO RECEIVE UPDATES ON ALL THINGS LE SPECS</i></h6></div>
+        <a href="https://www.facebook.com/LeSpecs/"><div class="fbButton">FOLLOW HERE</div></a>
+    </div>
+
+    <!-- Footer -->
+    <div class="container-fluid shadow-sm">
+        <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 ps-5 pe-5 pt-5 my-1 border-top">
+          <div class="col mb-3">
+            <a href="./home.html" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
+              <img src="assets/logo 2.png" class="bi me-2" width="140px" >
+            </a>
+            <p class="text-body-secondary">© Le Specs. All right reserved</p>
+          </div>
+      
+          <div class="col mb-3">
+      
+          </div>
+      
+          <div class="col mb-3">
+            <h6>CUSTOMER CARE</h6>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="https://intl.lespecs.com/pages/shippinginfo" class="nav-link p-0 text-body-secondary">Shipping</a></li>
+              <li class="nav-item mb-2"><a href="https://intl.lespecs.com/pages/returns" class="nav-link p-0 text-body-secondary">Returns</a></li>
+              <li class="nav-item mb-2"><a href="https://intl.lespecs.com/pages/contact-us" class="nav-link p-0 text-body-secondary">Contact Us</a></li>
+              <li class="nav-item mb-2"><a href="https://intl.lespecs.com/pages/warranties" class="nav-link p-0 text-body-secondary">Warranty</a></li>
+              <li class="nav-item mb-2"><a href="https://intl.lespecs.com/pages/refund-policy" class="nav-link p-0 text-body-secondary">Return Policy</a></li>
+            </ul>
+          </div>
+      
+          <div class="col mb-3">
+            <h6>ABOUT US</h6>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="https://intl.lespecs.com/pages/our-story" class="nav-link p-0 text-body-secondary">Our Story</a></li>
+              <li class="nav-item mb-2"><a href="https://intl.lespecs.com/pages/stockists" class="nav-link p-0 text-body-secondary">Find a Store</a></li>
+              <li class="nav-item mb-2"><a href="https://intl.lespecs.com/pages/faq-intl" class="nav-link p-0 text-body-secondary">FAQ's</a></li>
+            </ul>
+          </div>
+      
+          <div class="col mb-3">
+            <h6>CORPORATE</h6>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="https://intl.lespecs.com/pages/corporate" class="nav-link p-0 text-body-secondary">Corporate Gifts</a></li>
+            </ul>
+          </div>
+        </footer>
+      </div>
+      <div class="footerLiner container-fluid "><img src="./assets/footer.png" height="20px"></div>
+
+
+  </div>
+  
+</body>
+</html>
